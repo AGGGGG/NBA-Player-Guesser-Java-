@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<synth>
+	
+	<!-- do all style tags up here -->
+	
+	<!-- Style that all regions will use (default style) -->
+    <style id="defaultStyle">
+	
+	  <opaque value="TRUE"/>
+      <font name="Verdana" size="20"/>
+      <state>
+      	<color value="#0253A4" type="BACKGROUND"/>
+      	<color value="WHITE" type="FOREGROUND"/>
+      </state>
+    </style>
+	
+	<style id="textfieldStyle">
+		<opaque value="TRUE"/>
+		<state>
+			<color value="#CF2A32" type="BACKGROUND"/>
+		</state>
+	</style>
+	
+	<style id = "buttonStyle">
+		<opaque value="TRUE"/>
+		<font name="Verdana" size="20"/>
+		<!-- Shift the text one pixel when pressed -->
+		<!--
+	    <property key="Button.textShiftOffset" type="integer" value="1"/>
+		<insets top="15" left="20" right="20" bottom="15"/> -->
+		      <state>
+		       <!-- <imagePainter method="buttonBackground" path="button_red.png"
+		                    sourceInsets="0 0 -1 0"/> -->
+		      	<color value="#CF2A32" type="BACKGROUND"/>
+		      </state>
+		      <state value="PRESSED">
+				<!-- NOTE: may not have pressed picture of button to use -->
+				<!--
+		        <imagePainter method="buttonBackground" path="images/button2.png"
+		                    sourceInsets="10 10 10 10"/> -->
+		      </state>
+		      <state value="MOUSE_OVER">
+		      	<color value="RED" type="TEXT_FOREGROUND"/>
+		      </state>
+	</style>
+  
+  
+  <!-- do all binding here on the bottom -->
+  <bind style="defaultStyle" type="region" key=".*"/>
+  <bind style="buttonStyle" type="region" key="BUTTON"/>
+  <bind style="textfieldStyle" type="region" key="textField"/>
+   
+</synth>

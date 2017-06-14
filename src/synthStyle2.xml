@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<synth>
+	<style id="default">
+		<state>
+			<color value="#FFFFFF" type="FOREGROUND"/>
+		</state>
+	</style>
+	
+	<bind style="default" type="region" key=".*"/>
+</synth>
